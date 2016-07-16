@@ -32,6 +32,10 @@ if LaserTurretSpeedMod then
 	require("prototypes.technology.laser-turret-speed")
 end
 
+if FlamethrowerDamageMod then
+	require("prototypes.technology.flamethrower-damage")
+end
+
 if LogisticCharacterSlotsMod then
 	require("prototypes.technology.logistic-character-slots")
 end

@@ -24,6 +24,8 @@ InserterStackSizeMod			= true
 LaserTurretDamageMod			= true
 LaserTurretSpeedMod				= true
 
+FlamethrowerDamageMod			= true
+
 LogisticCharacterSlotsMod		= true
 LogisticCharacterTrashSlotsMod	= true
 
