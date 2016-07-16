@@ -15,7 +15,7 @@ for i=minlevel,maxlevel do
 			pack_b = 1 + ord(10 <= i),		-- Blue science
 			pack_a = 1,						-- Alien science
 			time = 10 + i * 10,
-			count = CountFactor * math.floor(100 * 2 ^ (i / 3)),
+			count = math.floor(CountFactor * 100 * 2 ^ (i / 3)),
 			modifier = 0.40 + i * 0.05,
 			modifiertype = "worker-robot-speed",
 			neededscience = "logistic-robotics",

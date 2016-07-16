@@ -15,7 +15,7 @@ for i=minlevel,maxlevel do
 			pack_b = 1 + ord(11 <= i),		-- Blue science
 			pack_a = 1,						-- Alien science
 			time = i * 10,
-			count = CountFactor * math.floor(100 * 2 ^ (i / 3)),
+			count = math.floor(CountFactor * 100 * 2 ^ (i / 3)),
 			modifier = 0.30,
 			modifiertype = "gun-speed",
 			neededscience = "rocketry",

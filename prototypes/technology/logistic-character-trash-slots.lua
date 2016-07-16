@@ -15,7 +15,7 @@ for i=minlevel,maxlevel do
 			pack_b = 1 + ord(8 <= i),		-- Blue science
 			pack_a = 1,						-- Alien science
 			time = math.max(30, i * 5),
-			count = CountFactor * math.floor(100 * 2 ^ (i / 3)),
+			count = math.floor(CountFactor * 100 * 2 ^ (i / 3)),
 			-- Only 2 slots per upgrade may seem too few, but we'd have hundreds of slots on level 25 if we use 5 (vanilla value).
 			modifier = 2,
 			modifiertype = "character-logistic-trash-slots",

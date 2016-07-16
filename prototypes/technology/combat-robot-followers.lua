@@ -15,7 +15,7 @@ for i=minlevel,maxlevel do
 			pack_b = ord(2 <= i),			-- Blue science
 			pack_a = ord(6 <= i),			-- Alien science
 			time = 30,
-			count = CountFactor * math.floor(50 * 2 ^ (i / 3)),
+			count = math.floor(CountFactor * 50 * 2 ^ (i / 3)),
 			modifier = 10,
 			modifiertype = "maximum-following-robots-count",
 			neededscience = "combat-robotics",
