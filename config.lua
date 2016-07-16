@@ -3,8 +3,8 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 --[[
 		Switch every upgrade generation you don't want to "false".
-		At the bottom of this file you'll find a variable with the name 'CountFactor', which has the default value of 2.
-		If you set it to 1, all upgrades will cost only half price - and 150% if you set it to 3.
+		At the bottom of this file you'll find a variable with the name 'CountFactor', which has the default value of 1.
+		If you set it to 0.5, all upgrades will cost only half price - and 150% if you set it to 1.5.
 ]]--
 
 ----------------------------------------------------------------------------------------------------
