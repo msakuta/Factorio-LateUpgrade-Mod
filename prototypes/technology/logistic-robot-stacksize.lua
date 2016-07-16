@@ -2,9 +2,10 @@
 require("config")
 require("common")
 
-local maxlevels = 25
+local minlevel = 4
+local maxlevel = 25
 
-for i=4,maxlevels do
+for i=minlevel,maxlevel do
 	data:extend({
 		createupgrade(i, {
 			name_prefix = "worker-robots-storage-",

@@ -2,9 +2,10 @@
 require("config")
 require("common")
 
-local maxlevels = 25
+local minlevel = 7
+local maxlevel = 25
 
-for i=7,maxlevels do
+for i=minlevel,maxlevel do
 	data:extend({
 		createupgrade(i, {
 			name_prefix = "shotgun-shell-damage-",
