@@ -1,0 +1,11 @@
+{
+	"name": "LateUpgrades",
+	"version": "0.1.0",
+	"title": "Late Upgrades",
+	"author": "msakuta",
+	"contact": "masahiro.sakuta@gmail.com",
+	"homepage": "",
+	"description": "Performance upgrades for late game to spend resources on.",
+	"dependencies": ["base >= 0.13.0"],
+	"factorio_version": "0.13"
+}
