@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 --[[
 		Switch every upgrade generation you don't want to "false".
-		At the bottom of this file you'll find a variable with the name 'IncreasingFactor', which has the default value of 2.
+		At the bottom of this file you'll find a variable with the name 'CountFactor', which has the default value of 2.
 		If you set it to 1, all upgrades will cost only half price - and 150% if you set it to 3.
 ]]--
 
@@ -25,6 +25,8 @@ LaserTurretDamageMod			= true
 LaserTurretSpeedMod				= true
 
 FlamethrowerDamageMod			= true
+
+GrenadeDamageMod				= true
 
 LogisticCharacterSlotsMod		= true
 LogisticCharacterTrashSlotsMod	= true

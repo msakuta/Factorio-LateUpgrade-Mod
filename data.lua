@@ -36,6 +36,10 @@ if FlamethrowerDamageMod then
 	require("prototypes.technology.flamethrower-damage")
 end
 
+if GrenadeDamageMod then
+	require("prototypes.technology.grenade-damage")
+end
+
 if LogisticCharacterSlotsMod then
 	require("prototypes.technology.logistic-character-slots")
 end
