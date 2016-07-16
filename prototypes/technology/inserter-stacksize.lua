@@ -22,7 +22,7 @@ for i=minlevel,maxlevel do
 	})
 
 	-- Non-stack inserters benefit from upgrade once in a while
-	if (i + 2) % 5 == 0 then
+	if (i + 3) % 5 == 0 then
 		table.insert(t.effects, {
 			type = "inserter-stack-size-bonus",
 			modifier = 1
