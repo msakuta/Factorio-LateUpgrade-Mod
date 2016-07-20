@@ -3,7 +3,7 @@ require("config")
 require("common")
 
 local minlevel = 7
-local maxlevel = 25
+local maxlevel = 26
 
 for i=minlevel,maxlevel do
 	data:extend({
@@ -15,8 +15,8 @@ for i=minlevel,maxlevel do
 			pack_b = 1 + ord(11 <= i),		-- Blue science
 			pack_a = 1,						-- Alien science
 			time = math.max(30, i * 5),
-			count = math.floor(CountFactor * 300 * 2 ^ (i / 3)),
-			-- Only 2 slots per upgrade may seem too few, but we'd have hundreds of slots on level 25 if we use 5 (vanilla value).
+			count = math.floor(CountFactor * 200 * 2 ^ (i / 2)),
+			-- Only 2 slots per upgrade may seem too few, but we'd run out of screen space if we hav many.
 			modifier = 2,
 			modifiertype = "character-logistic-slots",
 			neededscience = "logistic-robotics",
