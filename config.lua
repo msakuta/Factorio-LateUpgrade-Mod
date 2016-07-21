@@ -49,3 +49,6 @@ AdditionalToolBeltMod			= true
 CountFactor						= 1
 
 ----------------------------------------------------------------------------------------------------
+
+-- Use Bob's technology mod's science pack 4 as ingredients for upgrages
+EnableBobsSciencePack4			= true

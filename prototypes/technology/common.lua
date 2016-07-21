@@ -1,4 +1,9 @@
+require("config")
+
 function createupgrade(level, params)
+	-- Detect Bob's tech mod by existence of science-pack-4 which only exists
+	-- when the mod is active.
+	local hasBobsMod = data.raw.tool["science-pack-4"] ~= nil
 
 	local f_result =
 	{
@@ -40,6 +45,15 @@ function createupgrade(level, params)
 				f_result.prerequisites[#f_result.prerequisites + 1] = upg_stage2prereq
 				upg_stage2reached = true
 			end
+		end
+	end
+
+	if hasBobsMod and EnableBobsSciencePack4 then
+		-- If count of science pack 4 is given by the caller, use it.
+		-- Otherwise, copy count of blue science pack.
+		local pack4count = params.pack_d or params.pack_b
+		if 0 < pack4count then
+			table.insert(f_result.unit.ingredients, {"science-pack-4", pack4count})
 		end
 	end
 --[[
