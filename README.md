@@ -38,6 +38,12 @@ In order to keep vanilla research recipes intact, we need to somehow
 'extrapolate' existing ingredient requirements to make the new recipes somewhat
 continuous.
 
+Now this mod supports Bob's tech mod's science pack 4. All extended upgrades have
+science pack 4 as requirements, making going up the levels even more challenging.
+If you do not want this feature, you can turn it off by assigning `false` to
+`EnableBobsSciencePack4` in config.lua.
+Of course it does not take effect if Bob's mod is not introduced.
+
 As you can see in an example plot below (note the logarithmic scale), resources
 required by upgrades increase radically, so you (hopefully) won't need to worry
 about reaching max level.
