@@ -1,8 +1,8 @@
-Late Upgrades -- A Mod for Factorio v0.13
+Late Upgrades -- A Mod for Factorio v0.14
 ========================================
 
-This is a mod for a game called Factorio. It's compatible with Factorio v0.13
-(NOT compatible with v0.12 or earlier).
+This is a mod for a game called Factorio. It's compatible with Factorio v0.14
+(NOT compatible with v0.12 or earlier, see v0.1.x for v0.13).
 This mod will add upgrade researches up to level 25 as resource sinks for late
 game.
 
