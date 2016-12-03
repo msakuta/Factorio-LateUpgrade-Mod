@@ -2,6 +2,27 @@
 require("config")
 require("common")
 
+local research_effect ={
+	{
+		type = "turret-attack",
+		turret_id = "gun-turret",
+		modifier = 0.40,
+	},
+}
+if data.raw["ammo-turret"]["bob-gun-turret-2"] then
+	table.insert(research_effect, {type = "turret-attack", turret_id = "bob-gun-turret-2", modifier = 0.40})
+end
+if data.raw["ammo-turret"]["bob-gun-turret-3"] then
+	table.insert(research_effect, {type = "turret-attack", turret_id = "bob-gun-turret-3", modifier = 0.40})
+end
+if data.raw["ammo-turret"]["bob-gun-turret-4"] then
+	table.insert(research_effect, {type = "turret-attack", turret_id = "bob-gun-turret-4", modifier = 0.40})
+end
+if data.raw["ammo-turret"]["bob-gun-turret-5"] then
+	table.insert(research_effect, {type = "turret-attack", turret_id = "bob-gun-turret-5", modifier = 0.40})
+end
+
+
 local minlevel = 7
 local maxlevel = 25
 
@@ -16,11 +37,8 @@ for i=minlevel,maxlevel do
 			pack_a = 1,						-- Alien science
 			time = i * 10,
 			count = math.floor(CountFactor * 100 * 2 ^ (i / 3)),
-			modifier = 0.40,
-			modifiertype = "turret-attack",
+			effects = research_effect,
 			neededscience = "turrets",
-			ammo_category = "gun-turret",
-			turret_id = "gun-turret",
 			stageusage = false,
 			order = "e-o-a" -- Order in science-screen.
 		})
