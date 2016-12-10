@@ -79,3 +79,46 @@ end
 if AdditionalToolBeltMod then
 	require("prototypes.technology.toolbelt")
 end
+
+-- Bobs Warfare Upgrades
+if LaserRifleDamageMod then
+	if data.raw.technology["bob-laser-rifle-damage-6"] then require("prototypes.technology.laser-rifle-damage") end
+end
+
+if LaserRifleSpeedMod then
+	if data.raw.technology["bob-laser-rifle-speed-6"] then require("prototypes.technology.laser-rifle-speed") end
+end
+
+if TankCannonDamageMod then
+	if data.raw.technology["bob-tank-cannon-damage-6"] then require("prototypes.technology.tank-cannon-damage") end
+end
+
+if TankCannonSpeedMod then
+	if data.raw.technology["bob-tank-cannon-speed-6"] then require("prototypes.technology.tank-cannon-speed") end
+end
+
+if TankArtilleryDamageMod then
+	if data.raw.technology["bob-tank-artillery-damage-6"] then require("prototypes.technology.tank-artillery-damage") end
+end
+
+if TankArtillerySpeedMod then
+	if data.raw.technology["bob-tank-artillery-speed-6"] then require("prototypes.technology.tank-artillery-speed") end
+end
+
+if SniperTurretDamageMod then
+	if data.raw.technology["bob-sniper-turret-damage-6"] then require("prototypes.technology.sniper-turret-damage") end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+

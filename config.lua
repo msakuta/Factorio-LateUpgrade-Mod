@@ -44,6 +44,19 @@ ShotgunShellSpeedMod			= true
 
 AdditionalToolBeltMod			= true
 
+----Bob's Warefare Upgrades----
+
+LaserRifleDamageMod 			= true
+LaserRifleSpeedMod 				= true
+
+TankCannonDamageMod 			= true
+TankCannonSpeedMod 				= true
+
+TankArtilleryDamageMod 			= true
+TankArtillerySpeedMod 			= true
+
+SniperTurretDamageMod 			= true
+
 ----------------------------------------------------------------------------------------------------
 
 CountFactor						= 1
